@@ -1,39 +1,55 @@
-/*Global Background, Colors, and Widths*/
-*{box-sizing: border-box;}
+/* Global Background, Colors, and Widths */
+* { box-sizing: border-box; }
 
-body{font-size: 16px;
+body {
+    font-size: 16px;
     line-height: 1.5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;}
+    margin: 0;
+}
 
-header, nav ul, #content-wrapper{
-    width: 90px;
-    max-width: 120px;
+header, nav ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-a {color: #008000;}
+a { color: #008000; }
 
-/*Logo*/
-header img{position:absolute;
-    top: 0;
-    left: 0;}
-
-header {position:relative;
+/* Logo */
+header {
+    position: relative;
 }
 
-header h1, nav ul {padding-left: 50px;}
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1, nav ul {
+    padding-left: 50px;
+}
 
 /* Navbar */
+nav {
+    background-color: #008000;
+}
 
-nav {background-color: #008000;}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-nav ulv {list-style-type: none;}
+nav ul li {
+    display: inline-block;
+    padding: 1rem;
+}
 
-nav ul li {display: inline-block;
-    padding: irem;
-    color:white;
+nav ul li a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,39 +59,37 @@ nav a:hover {
     color: #9ae39a;
 }
 
-/*Home Page Main Image*/
+/* Home Page Main Image */
 main article img {
     border: double 3px #333333;
     float: left;
-    margin-top: .5rem;
-    margin-bottom: .1rem;
-    margin-right: .5rem;
+    margin: 0.5rem 0.5rem 0.1rem 0;
 }
 
-
-/*Home page Bottom Column */
-main section{
-    display:flex;
+/* Home Page Bottom Column */
+main section {
+    display: flex;
+    gap: 1rem;
 }
 
-main section div{
+main section div {
     background-color: #e7ffe7;
-    border: 3px double solid #008000;
+    border: 3px double #008000;
     border-radius: 10px;
-    width:33%;
-    margin-right: 1rem;
+    width: 33%;
     text-align: center;
 }
 
-main section div last-child{
-    margin-right: 0
+main section div:last-child {
+    margin-right: 0;
 }
 
-main section div h2{
-    background-color:#008000;
-    border-radius: 10 10 0 0;
+main section div h2 {
+    background-color: #008000;
+    border-radius: 10px 10px 0 0;
     color: white;
-    margin-top: 0;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 main section div img {
@@ -85,46 +99,46 @@ main section div img {
     margin-right: auto;
 }
 
-/*sidebars*/
-aside section{
+/* Sidebars */
+aside section {
     background-color: #ffffff;
     margin-bottom: 1rem;
-    border: 1px solid #008000
+    border: 1px solid #008000;
 }
 
-aside h3{
+aside h3 {
     background-color: #008000;
-    color:white;
-    padding: .5rem;
-    margin:0;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
 }
 
 aside a {
     display: inline-block;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
-/*Home Page Columns*/
+/* Home Page Columns */
 #content-wrapper {
-    display:flex;
+    display: flex;
+    gap: 1rem;
 }
 
-#content-wrapper aside{
+#content-wrapper aside {
     background-color: #ccc;
-    margin-right: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
     position: relative;
     top: 20px;
     flex: 1;
     order: 0;
 }
 
-main aside h2{
+main aside h2 {
     margin-top: 0;
     white-space: nowrap;
 }
 
-#content-wrapper main{
-    flex:4;
+#content-wrapper main {
+    flex: 4;
     order: 1;
 }
