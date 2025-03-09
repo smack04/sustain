@@ -1,7 +1,5 @@
 /* Global Background, Colors, and Widths */
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     font-size: 16px;
@@ -17,19 +15,17 @@ header, nav ul, #content-wrapper {
     margin-right: auto;
 }
 
-a {
-    color: #008000;
-}
+a { color: #008000; }
 
 /* Logo */
+header {
+    position: relative;
+}
+
 header img {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-header {
-    position: relative;
 }
 
 header h1, nav ul {
@@ -67,12 +63,10 @@ nav a:hover {
 main article img {
     border: double 3px #333333;
     float: left;
-    margin-top: .5rem;
-    margin-bottom: .1rem;
-    margin-right: .5rem;
+    margin: 0.5rem 0.5rem 0.1rem 0;
 }
 
-/* Home page Bottom Column */
+/* Home Page Bottom Column */
 main section {
     display: flex;
     gap: 1rem;
@@ -94,7 +88,7 @@ main section div h2 {
     background-color: #008000;
     border-radius: 10px 10px 0 0;
     color: white;
-    margin-top: 0;
+    margin: 0;
     padding: 0.5rem;
 }
 
@@ -115,13 +109,13 @@ aside section {
 aside h3 {
     background-color: #008000;
     color: white;
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 0;
 }
 
 aside a {
     display: inline-block;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 /* Home Page Columns */
@@ -132,7 +126,7 @@ aside a {
 
 #content-wrapper aside {
     background-color: #ccc;
-    padding: .5rem;
+    padding: 0.5rem;
     position: relative;
     top: 20px;
     flex: 1;
