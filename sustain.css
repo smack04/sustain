@@ -11,7 +11,7 @@ body {
 header {
   background-color: #ffffff;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   border-bottom: 3px solid #4CAF50;
   position: relative;
 }
@@ -19,7 +19,7 @@ header {
 #logo {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 20px;
   width: 50px;
   height: auto;
 }
@@ -28,8 +28,9 @@ h1 {
   font-size: 24px;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 60px;
+  margin-left: 40px;
   color: #000;
+  font-weight: bold;
 }
 
 /* Navigation */
@@ -47,7 +48,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -63,7 +64,7 @@ nav ul li a:hover {
 /* Layout */
 #content-wrapper {
   display: flex;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 20px auto;
   background: white;
 }
@@ -75,7 +76,7 @@ main {
 
 aside {
   flex: 1;
-  background: #f0f0f0;
+  background: #e8f5e9;
   padding: 20px;
   border-right: 3px solid #4CAF50;
 }
@@ -101,13 +102,15 @@ section {
 }
 
 section div {
-  background: #e8f5e9;
+  background: #4CAF50;
   text-align: center;
   padding: 15px;
   border-radius: 5px;
   flex: 1;
   margin: 10px;
   border: 1px solid #4CAF50;
+  color: white;
+  font-weight: bold;
 }
 
 section div img {
@@ -117,7 +120,7 @@ section div img {
 
 section div a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
